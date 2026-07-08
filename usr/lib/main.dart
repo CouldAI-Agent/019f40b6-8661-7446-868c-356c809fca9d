@@ -44,13 +44,13 @@ class HistoryTableScreen extends StatelessWidget {
                 (states) => Theme.of(context).colorScheme.primaryContainer,
               ),
               columns: const [
-                DataColumn(label: Text('Dönem', style: TextStyle(fontWeight: FontWeight.bold))),
-                DataColumn(label: Text('Tarih Aralığı', style: TextStyle(fontWeight: FontWeight.bold))),
-                DataColumn(label: Text('Padişah Adı', style: TextStyle(fontWeight: FontWeight.bold))),
-                DataColumn(label: Text('Dönemdeki Önemli Savaşlar', style: TextStyle(fontWeight: FontWeight.bold))),
-                DataColumn(label: Text('Dönemdeki Önemli Antlaşmalar', style: TextStyle(fontWeight: FontWeight.bold))),
-                DataColumn(label: Text('Dönemdeki Önemli İsyanlar/İç Olaylar', style: TextStyle(fontWeight: FontWeight.bold))),
-                DataColumn(label: Text('Yüzyıla Göre Islahatlar', style: TextStyle(fontWeight: FontWeight.bold))),
+                DataColumn(label: Text('DÖNEMLER', style: TextStyle(fontWeight: FontWeight.bold))),
+                DataColumn(label: Text('TARİHLER', style: TextStyle(fontWeight: FontWeight.bold))),
+                DataColumn(label: Text('PADİŞAHLAR', style: TextStyle(fontWeight: FontWeight.bold))),
+                DataColumn(label: Text('SAVAŞLAR', style: TextStyle(fontWeight: FontWeight.bold))),
+                DataColumn(label: Text('ANTLAŞMALAR', style: TextStyle(fontWeight: FontWeight.bold))),
+                DataColumn(label: Text('ÖNEMLİ SİYASİ OLAY VE İSYANLAR', style: TextStyle(fontWeight: FontWeight.bold))),
+                DataColumn(label: Text('ISLAHATLAR', style: TextStyle(fontWeight: FontWeight.bold))),
               ],
               rows: historyData.map((era) {
                 return DataRow(cells: [
